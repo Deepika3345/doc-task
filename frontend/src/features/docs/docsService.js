@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://doc-task.onrender.com/doc";
+const API_URL = "https://doc-task.onrender.com/api/doc";
 // GET DOCS
 const getDocs = async (token) => {
   const option = {
