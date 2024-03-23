@@ -30,7 +30,7 @@ const DocDetail = () => {
     <div className="container ">
       <div className="d-flex justify-content-center align-items-center">
         <div className="card m-5" style={{ width: "18rem" }}>
-          <img src={"http://localhost:5000/" + docs.img} alt="..." />
+          <img src={"https://doc-task.onrender.com/" + docs.img} alt="..." />
           <div className="card-body">
             <h5 className="card-title">{docs.title}</h5>
             <p className="card-text">{docs.description}</p>
