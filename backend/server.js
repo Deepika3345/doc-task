@@ -7,11 +7,10 @@ const app = express();
 
 
 
-const path = require('path')
-
-
 // connect DB
 connectDB();
+// cors
+app.use(cors())
 
 
 // make static file
@@ -21,8 +20,7 @@ app.use('/uploads', express.static('uploads'))
 // body-parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// cors
-app.use(cors())
+
 
 
 // auth Router
@@ -32,11 +30,7 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/doc", require("./routes/docRoutes"));
 
 
-// path
-app.get('/',(req,res)=>{
-  app.use(express.static(path.resolve(__dirname,'frontend','build')))
-  res.sendFile(path.resolve(__dirname,'frontend','build','index.html'))
-})
+
 
 
 app.listen(PORT, () => {
