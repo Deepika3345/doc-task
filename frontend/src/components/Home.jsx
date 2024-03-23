@@ -1,16 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gif from '../assets/gif6.gif'
 
 const Home = () => {
   return (
     // <div className="box p-5 d-flex justify-content-center align-items-center ">
     <div className="container d-flex  align-items-center flex-row">
-      <div className="img-area w-50 p-2">
-        <img className="" src={gif} alt="" />
-
-      </div>
-      <div className="text-area w-50 p-5 ">
+     
+      <div className="text-area  p-5 ">
         <span>
           <Link
             to={"/docs/new-doc"}
