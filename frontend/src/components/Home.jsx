@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     // <div className="box p-5 d-flex justify-content-center align-items-center ">
-    <div className="container d-flex  align-items-center flex-row">
+    <div className="container d-flex justify-content-center align-items-center flex-row">
      
       <div className="text-area  p-5 ">
         <span>
